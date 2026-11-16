@@ -41,7 +41,7 @@ After this pull request is merged to `main`, turn on GitHub Pages if it is not a
 
 Most sentences are in `index.html`. Case-study pages repeat the campus numbers, the future-climate numbers, and the lab image so a shared link has the same facts. If you change a result, change it in both places.
 
-The CSME 2026 talk is written out under Research and presentations. It is not a placeholder.
+The CSME Congress 2026 talk is written out under Research and presentations. The title is “Study of Toxic Air Contaminants Exposure and Evacuation Zone for an Oil Tank Pool Fire in a Residential Neighborhood.” It is not a placeholder.
 
 The hero and the About section use Rozhin’s bio. Standards named on the site are ones she has used: NECB 2020, ASHRAE 62.1 (ventilation), and the BC Energy Step Code, plus IES VE and the Athena Impact Estimator.
 
