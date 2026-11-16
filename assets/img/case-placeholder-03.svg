@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Case study image placeholder">
-  <rect width="960" height="600" fill="#f4f1ea"/>
-  <text x="40" y="46" font-family="ui-monospace, monospace" font-size="16" fill="#6d3d1c">PLACEHOLDER · CASE STUDY IMAGE</text>
-  <rect x="230" y="150" width="500" height="300" fill="none" stroke="#1a6b60" stroke-width="2" stroke-dasharray="8 7"/>
-  <path d="M280 390 V250 H430 V210 H680 V390 Z" fill="none" stroke="#102824" stroke-width="2" stroke-dasharray="6 6"/>
-  <text x="480" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#102824">Case study not written yet</text>
-</svg>
