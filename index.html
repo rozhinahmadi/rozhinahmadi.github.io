@@ -53,8 +53,10 @@
       "Athena Impact Estimator",
       "Embodied carbon",
       "NECB 2020",
+      "NECB 2025",
       "ASHRAE 62.1",
       "BC Energy Step Code",
+      "ApacheHVAC",
       "AERMOD View (Lakes Environmental)",
       "AutoCAD",
       "Future climate analysis"
@@ -71,7 +73,7 @@
           <p class="hero-kicker">Metro Vancouver, BC</p>
           <h1 id="hero-name">Rozhin Ahmadi</h1>
           <p class="hero-role">Building Energy Modeller &amp; Building Performance Analyst | IES VE | Metro Vancouver</p>
-          <p class="hero-value">Energy modeller using IES VE. Standards: NECB 2020, ASHRAE 62.1 (ventilation), and the BC Energy Step Code.</p>
+          <p class="hero-value">Energy modeller using IES VE. Standards: NECB 2020, NECB 2025 (performance path), ASHRAE 62.1 (ventilation), and the BC Energy Step Code.</p>
           <div class="hero-intro">
             <p>I'm a building performance analyst and MASc candidate in Sustainable Energy Engineering at Simon Fraser University, based in Metro Vancouver. I build whole-building energy models in IES VE, from geometry, thermal zones and envelope assemblies to glazing, shading, internal loads and HVAC systems, and I turn the results into clear metrics such as TEDI, TEUI and GHGI, checked against NECB 2020 and BC Energy Step Code requirements, that help design teams make better decisions.</p>
             <p>I also test designs against future climate, using 2040–2060 weather files, and support embodied-carbon work through life cycle assessment. My goal is simple: help buildings in BC use less energy and emit less carbon, from early design through to net-zero.</p>
@@ -103,7 +105,7 @@
             <p class="k">Campus energy model</p>
             <h3><a href="/case-studies/vancouver-university-campus.html">Vancouver university campus building</a></h3>
             <p class="meta">Mitacs Intern &amp; Graduate Research Assistant, CREATE Lab, Simon Fraser University · since January 2025</p>
-            <p>Through a Mitacs-funded industry partnership with a Vancouver post-secondary institution, I built a detailed IES VE model of a university campus building with complex geometry, sloped architectural elements and varying floor-to-floor heights. Classrooms, offices and common areas each have their own occupancy, lighting and equipment profiles. Working from imported AutoCAD drawings, I compared 25 HVAC configurations on heating load, cooling load and GHGI, and showed how envelope and construction choices change energy use and emissions. My favourite part is showing how small design changes lead to big results.</p>
+            <p>Through a Mitacs-funded industry partnership with a Vancouver post-secondary institution, I modelled a roughly 12,600 m², highly glazed university campus building in IES VE, working from imported AutoCAD drawings. I built detailed ApacheHVAC networks for 25 system configurations, from boiler-chiller VAV and fan coils to air-source heat pumps with DOAS and heat recovery and VRF, then ranked them with an equal-weight score across TEDI, CEDI, TEUI and GHGI. On two HVAC bases (VRF and heat pump fan coils) I tested 15 envelope retrofit cases, including insulation, high-performance glazing, lower SHGC, solar-controlled external louvres and blinds. The study follows NECB 2020, the NECB 2025 performance path and the BC Energy Step Code.</p>
             <a class="text-link" href="/case-studies/vancouver-university-campus.html">View case study</a>
           </div>
         </article>
@@ -113,7 +115,7 @@
             <div class="card-body">
               <p class="k">Teaching</p>
               <h3><a href="/case-studies/teaching-building-lca.html">Teaching building LCA at SFU</a></h3>
-              <p>As a teaching assistant for Environmental Life Cycle Assessment and Sustainability, I lead labs where students model building assemblies in the Athena Impact Estimator and interpret embodied-carbon results.</p>
+              <p>For SFU’s Environmental Life Cycle Assessment and Sustainability course, I developed an 11-lab tutorial series for the Athena Impact Estimator for Buildings, with step-by-step manuals, four case studies and report templates, and I lead the labs where students model building assemblies and interpret embodied-carbon results.</p>
               <a class="text-link" href="/case-studies/teaching-building-lca.html">View case study</a>
             </div>
           </article>
@@ -121,8 +123,15 @@
             <div class="card-body">
               <p class="k">Same building</p>
               <h3><a href="/case-studies/future-climate-resilience.html">Future-climate resilience analysis</a></h3>
-              <p>For the same building, I simulated each HVAC system with 2040, 2050 and 2060 weather files to show how performance and operating cost change as the climate shifts, so systems can be compared over the building's life.</p>
+              <p>For the same building, I simulated each HVAC system with PCIC morphed CMIP6 (SSP1-2.6) weather files for the 2040s, 2050s and 2060s to show how performance and operating cost change as the climate shifts, so systems can be compared over the building's life.</p>
               <a class="text-link" href="/case-studies/future-climate-resilience.html">View case study</a>
+            </div>
+          </article>
+          <article class="card card-wide" id="scram">
+            <div class="card-body">
+              <p class="k">CREATE Lab</p>
+              <h3>Communicating research to partners</h3>
+              <p>For the CREATE Lab’s SCRAM project, I wrote the website copy and partner workshop summaries for partners including the City of Burnaby, TransLink, MODO Carshare and Mobi.</p>
             </div>
           </article>
         </div>
@@ -133,16 +142,19 @@
       <div class="wrap">
         <p class="eyebrow">02</p>
         <h2 id="tools-title">Tools and standards</h2>
-        <p class="lede">Whole-building modelling in IES VE, including AutoCAD drawing import, thermal zoning, schedules and internal loads, envelope, glazing and shading, HVAC, and parametric studies. Future-climate analysis uses 2040–2060 weather files. Metrics include TEDI, TEUI, CEDI, GHGI, and peak loads. Compliance modelling covers NECB 2020 and the BC Energy Step Code, plus ASHRAE 62.1 ventilation requirements.</p>
+        <p class="lede">Whole-building modelling in IES VE, including AutoCAD drawing import, ApacheHVAC network design, thermal zoning, schedules and internal loads, envelope, glazing and shading, and parametric studies. Future-climate analysis uses 2040–2060 weather files. Metrics include TEDI, TEUI, CEDI, GHGI, and peak loads. Compliance modelling covers NECB 2020, the NECB 2025 performance path, the BC Energy Step Code, and ASHRAE 62.1 ventilation requirements.</p>
         <ul class="tags">
           <li>IES VE</li>
+          <li>ApacheHVAC</li>
           <li>AutoCAD</li>
           <li>Athena Impact Estimator</li>
           <li>AERMOD View (Lakes Environmental)</li>
-          <li>Python</li>
+          <li>Python (matplotlib)</li>
           <li>MATLAB</li>
           <li>Excel</li>
+          <li>LaTeX</li>
           <li>NECB 2020</li>
+          <li>NECB 2025</li>
           <li>ASHRAE 62.1 (ventilation)</li>
           <li>BC Energy Step Code</li>
         </ul>
@@ -161,11 +173,11 @@
             <p class="org">CREATE Lab, School of Sustainable Energy Engineering, Simon Fraser University, Surrey, BC</p>
             <ul class="points">
               <li>Build whole-building energy models in IES VE for university and other institutional buildings, covering geometry, thermal zones, envelope assemblies, glazing, shading, internal gains, occupancy schedules, and HVAC systems.</li>
-              <li>Report TEDI, TEUI, CEDI, GHGI, peak loads, and annual heating and cooling demand. Standards used include NECB 2020, ASHRAE 62.1 for ventilation, and the BC Energy Step Code.</li>
-              <li>Run parametric studies of envelope configuration, glazing, shading strategy, and HVAC system selection.</li>
-              <li>Model air-pollution dispersion in AERMOD View alongside the building energy work.</li>
-              <li>Write technical reports and presentations on building energy and environmental performance for academic, municipal, and industry stakeholders.</li>
-              <li>The campus energy model is a Mitacs-funded industry partnership with a Vancouver post-secondary institution. For the same building, each HVAC system was also simulated with 2040, 2050 and 2060 weather files.</li>
+              <li>Report TEDI, TEUI, CEDI, GHGI, peak loads, and annual heating and cooling demand. Standards used include NECB 2020, the NECB 2025 performance path, ASHRAE 62.1 for ventilation, and the BC Energy Step Code.</li>
+              <li>Built ApacheHVAC networks for 25 HVAC configurations on a roughly 12,600 m², highly glazed Vancouver university campus building, and tested 15 envelope retrofit cases on VRF and heat pump fan coil bases.</li>
+              <li>Simulated those HVAC systems with PCIC morphed CMIP6 (SSP1-2.6) weather files for the 2040s, 2050s and 2060s.</li>
+              <li>Modelled CO and PM2.5 dispersion from an oil tank pool fire in AERMOD View (Lakes Environmental).</li>
+              <li>For the CREATE Lab’s SCRAM project, wrote website copy and partner workshop summaries for partners including the City of Burnaby, TransLink, MODO Carshare and Mobi.</li>
             </ul>
           </li>
           <li>
@@ -173,7 +185,7 @@
             <h3>Teaching Assistant</h3>
             <p class="org">School of Sustainable Energy Engineering, Simon Fraser University</p>
             <ul class="points">
-              <li>SEE 465 Environmental Life Cycle Assessment and Sustainability (Fall 2026): lead labs on building LCA in the Athena Impact Estimator for Buildings, including assembly modelling and embodied-carbon and environmental-impact results.</li>
+              <li>Environmental Life Cycle Assessment and Sustainability: developed an 11-lab Athena Impact Estimator tutorial series, with step-by-step manuals, four case studies and report templates, and lead the labs.</li>
               <li>SEE 466 Renewable Energy Systems and Distributed Generation (Fall 2025): labs, tutorials, and simulation-based learning.</li>
               <li>SEE 352 Thermodynamics II (Summer 2025): tutorials and grading.</li>
             </ul>
@@ -241,7 +253,7 @@
         <article class="entry">
           <h3>Study of Toxic Air Contaminants Exposure and Evacuation Zone for an Oil Tank Pool Fire in a Residential Neighborhood</h3>
           <p class="meta">Canadian Society for Mechanical Engineering International Congress 2026 · AERMOD View</p>
-          <p>Using AERMOD View (Lakes Environmental), I modelled how toxic air contaminants from an oil tank pool fire would spread through a residential neighbourhood and assessed the evacuation zone needed to protect residents. I presented the work at the Canadian Society for Mechanical Engineering International Congress 2026.</p>
+          <p>Using AERMOD View (Lakes Environmental), I modelled CO and PM2.5 dispersion from an oil tank pool fire across Pasquill–Gifford stability classes, compared exposure with BC Ambient Air Quality Objectives and assessed the evacuation zone needed to protect residents. I presented the work at the Canadian Society for Mechanical Engineering International Congress 2026.</p>
         </article>
       </div>
     </section>

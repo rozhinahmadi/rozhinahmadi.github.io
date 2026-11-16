@@ -46,7 +46,7 @@ Presentations holds one talk: “Study of Toxic Air Contaminants Exposure and Ev
 
 The Download resume button is in `index.html`, inside `.hero-actions`. It points at `assets/resume/Rozhin-Ahmadi-Resume.pdf` and downloads as `Rozhin-Ahmadi-Resume.pdf`. Replace that file to update the resume. Do not copy contact numbers from the PDF onto the page.
 
-The hero and the About section use Rozhin’s bio. Standards named on the site are ones she has used: NECB 2020, ASHRAE 62.1 (ventilation), and the BC Energy Step Code, plus IES VE and the Athena Impact Estimator.
+The hero, About, skills, and case studies follow the current bio. Standards named on the site are NECB 2020, the NECB 2025 performance path, ASHRAE 62.1 (ventilation), and the BC Energy Step Code, plus IES VE, ApacheHVAC, and the Athena Impact Estimator. The campus building is described only as a Vancouver university campus building, through a partnership with a Vancouver post-secondary institution.
 
 The contact email is in `index.html`, in the contact section. `@` is written as `&#64;` so the link still works in a browser and the raw HTML is a bit less obvious to scrapers. If the address changes, update both the `href` and the visible text.
 
@@ -70,7 +70,7 @@ Open `css/styles.css` and edit the variables in `:root`.
 | `--ph-bg` / `--ph-ink` | The tan highlight on anything still unknown |
 | `--font-serif` | Name and headings (Fraunces) |
 | `--font-sans` | Body (Source Sans 3) |
-| `--font-mono` | Labels and placeholder text (DM Mono) |
+| `--font-mono` | Small labels (DM Mono) |
 
 Font files are in `assets/fonts/`. Their licenses are the `OFL-*.txt` files beside them.
 
