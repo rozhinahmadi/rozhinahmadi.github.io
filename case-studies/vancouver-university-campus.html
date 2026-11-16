@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vancouver university campus building — Rozhin Ahmadi</title>
-  <meta name="description" content="IES VE model of a Vancouver university campus building: 25 HVAC configurations plus glazing and shading, screened on TEDI, CEDI, TEUI, and GHGI.">
+  <meta name="description" content="IES VE model of a Vancouver university campus building: 25 HVAC configurations compared on heating load, cooling load and GHGI, from imported AutoCAD drawings.">
   <meta name="author" content="Rozhin Ahmadi">
   <meta name="theme-color" content="#102824">
   <meta name="color-scheme" content="light">
@@ -52,7 +52,7 @@
           </div>
           <div>
             <dt>Tool</dt>
-            <dd>IES VE <span class="ph">[software version: confirm]</span></dd>
+            <dd>IES VE, with imported AutoCAD drawings. <span class="ph">[IES VE version: confirm]</span></dd>
           </div>
           <div>
             <dt>Goal</dt>
@@ -60,28 +60,26 @@
           </div>
           <div>
             <dt>Modelled</dt>
-            <dd>Geometry, thermal zones, envelope assemblies, glazing, shading, internal gains, and HVAC. Classrooms, offices, and common areas each have occupancy, lighting, computer and equipment loads, with annual variation in student occupancy and campus use.</dd>
+            <dd>Classrooms, offices and common areas each have their own occupancy, lighting and equipment profiles. Working from imported AutoCAD drawings.</dd>
           </div>
           <div>
             <dt>Scenarios</dt>
-            <dd>25 HVAC configurations, plus envelope and shading alternatives: glazing properties, tinting, and internal and external shading. Each option was screened on TEDI, CEDI, TEUI, and GHGI.</dd>
+            <dd>Working from imported AutoCAD drawings, I compared 25 HVAC configurations on heating load, cooling load and GHGI, and showed how envelope and construction choices change energy use and emissions. My favourite part is showing how small design changes lead to big results.</dd>
           </div>
           <div>
             <dt>Results</dt>
-            <!-- PLACEHOLDER: campus performance numbers. Same brackets as the home-page card. Do not invent a percentage. -->
+            <!-- PLACEHOLDER: heating load, cooling load and GHGI values. Same brackets as the home-page card. -->
             <dd>
-              <p>Design scenarios were identified that reduce campus energy use in support of net-zero goals. The size of that reduction is not on this page yet.</p>
               <ul class="metrics" aria-label="Result placeholders">
-                <li><span class="ph">[Floor area: XX m²]</span></li>
-                <li><span class="ph">[Thermal zones: XX]</span></li>
-                <li><span class="ph">[TEDI: XX kWh/m²·yr]</span></li>
-                <li><span class="ph">[CEDI: XX kWh/m²·yr]</span></li>
-                <li><span class="ph">[TEUI: XX kWh/m²·yr]</span></li>
-                <li><span class="ph">[GHGI: XX kgCO2e/m²·yr]</span></li>
-                <li><span class="ph">[% reduction in TEUI vs baseline: XX%]</span></li>
-                <li><span class="ph">[% reduction in GHGI vs baseline: XX%]</span></li>
+                <li><span class="ph">[Heating load: XX]</span></li>
+                <li><span class="ph">[Cooling load: XX]</span></li>
+                <li><span class="ph">[GHGI: XX]</span></li>
               </ul>
             </dd>
+          </div>
+          <div>
+            <dt>Future climate</dt>
+            <dd>For the same building, each HVAC system was also simulated with 2040, 2050 and 2060 weather files. <a href="/case-studies/future-climate-resilience.html">Future-climate resilience analysis</a>.</dd>
           </div>
         </dl>
 
@@ -91,7 +89,7 @@
             <figcaption>[Model image placeholder — replace with assets/img/campus-model.jpg]</figcaption>
           </figure>
           <figure class="study-figure">
-            <img src="/assets/img/campus-results-placeholder.svg" width="960" height="600" alt="Placeholder chart frame for TEDI, CEDI, TEUI, and GHGI. No results have been plotted.">
+            <img src="/assets/img/campus-results-placeholder.svg" width="960" height="600" alt="Placeholder chart frame for heating load, cooling load, and GHGI. No results have been plotted.">
             <figcaption>[Results image placeholder — replace with assets/img/campus-results.jpg]</figcaption>
           </figure>
         </div>
