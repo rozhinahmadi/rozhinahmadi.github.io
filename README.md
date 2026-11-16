@@ -24,6 +24,7 @@ After this pull request is merged to `main`, turn on GitHub Pages if it is not a
 | --- | --- |
 | `index.html` | The whole page, in this order: hero, case studies, tools, experience, education, research, about, contact |
 | `case-studies/vancouver-university-campus.html` | The campus energy model |
+| `case-studies/future-climate-resilience.html` | 2040, 2050 and 2060 HVAC runs for that same building |
 | `case-studies/teaching-building-lca.html` | Building LCA labs at SFU |
 | `case-studies/placeholder.html` | Empty case-study template. It is marked `noindex` |
 | `css/styles.css` | All styling. Colors and fonts are in `:root` at the top |
@@ -38,7 +39,9 @@ After this pull request is merged to `main`, turn on GitHub Pages if it is not a
 
 ## Edit text
 
-Most sentences are in `index.html`. Case-study pages repeat the campus numbers and the lab image so a shared link has the same facts. If you change a result, change it in both places.
+Most sentences are in `index.html`. Case-study pages repeat the campus numbers, the future-climate numbers, and the lab image so a shared link has the same facts. If you change a result, change it in both places.
+
+The CSME 2026 talk is written out under Research and presentations. It is not a placeholder.
 
 The hero and the About section use Rozhin’s bio. Standards named on the site are ones she has used: NECB 2020, ASHRAE 62.1 (ventilation), and the BC Energy Step Code, plus IES VE and the Athena Impact Estimator.
 
@@ -93,27 +96,26 @@ Unknowns are tan mono chips, or the word PLACEHOLDER on an image. Search the rep
 
 | What is missing | Where | Drop-in file, or what to edit |
 | --- | --- | --- |
-| Resume | `index.html` hero, the Download resume link (about line 79). The button label includes `[file]` | Replace `assets/resume/Rozhin-Ahmadi-Resume.pdf` and keep that filename. The current PDF only says “Resume coming soon” |
-| Campus model image | `index.html` case studies (about line 104) and `case-studies/vancouver-university-campus.html` (about line 90) | Save the screenshot as `assets/img/campus-model.jpg` and change both `src` attributes |
-| Campus results image | `index.html` (about line 109) and `case-studies/vancouver-university-campus.html` (about line 94) | Save the figure as `assets/img/campus-results.jpg` and change both `src` attributes |
-| Floor area | Both campus write-ups: `index.html` about line 124, case-study page about line 75 | Replace `[Floor area: XX m²]` |
-| Thermal zones | `index.html` about line 125, case-study page about line 76 | Replace `[Thermal zones: XX]` |
-| TEDI | `index.html` about line 126, case-study page about line 77 | Replace `[TEDI: XX kWh/m²·yr]` |
-| CEDI | `index.html` about line 127, case-study page about line 78 | Replace `[CEDI: XX kWh/m²·yr]` |
-| TEUI | `index.html` about line 128, case-study page about line 79 | Replace `[TEUI: XX kWh/m²·yr]` |
-| GHGI | `index.html` about line 129, case-study page about line 80 | Replace `[GHGI: XX kgCO2e/m²·yr]` |
-| TEUI reduction | `index.html` about line 130, case-study page about line 81 | Replace `[% reduction in TEUI vs baseline: XX%]` |
-| GHGI reduction | `index.html` about line 131, case-study page about line 82 | Replace `[% reduction in GHGI vs baseline: XX%]` |
-| IES VE version | `case-studies/vancouver-university-campus.html` about line 55 | Replace `[software version: confirm]` |
-| LCA lab image | `index.html` about line 141 and `case-studies/teaching-building-lca.html` about line 69 | Save it as `assets/img/lca-teaching.jpg` and change both `src` attributes |
-| Third case study | `index.html` card `id="case-study-3"` (about lines 151–162). Title is “Case study placeholder” | Duplicate `case-studies/placeholder.html`, then point this card at the new file. Image drop-in: `assets/img/case-03.jpg` (the card currently uses `assets/img/case-placeholder-03.svg`) |
-| Math-teaching employer | `index.html` experience, about line 220 | Replace `[School or organization: confirm]` |
-| AgriEngOrg end year | `index.html` experience, about line 223 | Replace `[End year: confirm]` |
-| Quality-control internship end year | `index.html` experience, about line 229 | Replace `[End year: confirm]` |
-| IROST / University of Tehran year | `index.html` experience, about line 236 | Replace `[Year: confirm — 2017 or 2018]` |
-| Thesis title | `index.html` education, about line 257 | Replace `[Thesis title: confirm]` |
-| BSc class size | `index.html` education, about line 265 | Replace `[of XX students: confirm]` next to class rank 9 |
-| SEE GRAD 2026 | `index.html` research, about lines 288–290 | Replace the title, date and place, and abstract chips |
-| Publications | `index.html` research, about lines 296–297 | Replace the title and the citation line. Add another article the same way for each paper |
+| Resume | `index.html` hero, the Download resume link (about line 81). The button label includes `[file]` | Replace `assets/resume/Rozhin-Ahmadi-Resume.pdf` and keep that filename. The current PDF only says “Resume coming soon” |
+| Campus model image | `index.html` case studies (about line 106) and `case-studies/vancouver-university-campus.html` (about line 88) | Save the screenshot as `assets/img/campus-model.jpg` and change both `src` attributes |
+| Campus results image | `index.html` (about line 111) and `case-studies/vancouver-university-campus.html` (about line 92) | Save the figure as `assets/img/campus-results.jpg` and change both `src` attributes |
+| Heating load | `index.html` about line 126 and `case-studies/vancouver-university-campus.html` about line 74 | Replace `[Heating load: XX]` |
+| Cooling load | `index.html` about line 127 and the campus page about line 75 | Replace `[Cooling load: XX]` |
+| GHGI | `index.html` about line 128 and the campus page about line 76 | Replace `[GHGI: XX]` |
+| IES VE version | Campus page about line 55, and `case-studies/future-climate-resilience.html` about line 51 | Replace `[IES VE version: confirm]` |
+| Future-climate figure | `index.html` about line 151 and `case-studies/future-climate-resilience.html` about line 71 | Save it as `assets/img/future-climate.jpg` and change both `src` attributes |
+| 2040 performance | `index.html` about line 160 and the future-climate page about line 62 | Replace `[2040 performance: XX]` |
+| 2050 performance | `index.html` about line 161 and the future-climate page about line 63 | Replace `[2050 performance: XX]` |
+| 2060 performance | `index.html` about line 162 and the future-climate page about line 64 | Replace `[2060 performance: XX]` |
+| Operating cost change | `index.html` about line 163 and the future-climate page about line 65 | Replace `[Operating cost change: XX]` |
+| LCA lab image | `index.html` about line 138 and `case-studies/teaching-building-lca.html` about line 69 | Save it as `assets/img/lca-teaching.jpg` and change both `src` attributes |
+| Math-teaching employer | `index.html` experience, about line 225 | Replace `[School or organization: confirm]` |
+| AgriEngOrg end year | `index.html` experience, about line 228 | Replace `[End year: confirm]` |
+| Quality-control internship end year | `index.html` experience, about line 234 | Replace `[End year: confirm]` |
+| IROST / University of Tehran year | `index.html` experience, about line 241 | Replace `[Year: confirm — 2017 or 2018]` |
+| Thesis title | `index.html` education, about line 262 | Replace `[Thesis title: confirm]` |
+| BSc class size | `index.html` education, about line 270 | Replace `[of XX students: confirm]` next to class rank 9 |
+| SEE GRAD 2026 | `index.html` research, about lines 299–301 | Replace the title, date and place, and abstract chips |
+| Publications | `index.html` research, about lines 307–308 | Replace the title and the citation line. Add another article the same way for each paper |
 
 The template page `case-studies/placeholder.html` is entirely bracketed (project name, building type, role, software, goal, what was modelled, scenarios, and the four result chips). It is the file to copy, not a finished project.
