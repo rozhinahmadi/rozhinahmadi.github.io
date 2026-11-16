@@ -1,6 +1,6 @@
 /* Rozhin Ahmadi — personal site
    Palette, type, and spacing live in :root. Edit those first.
-   Placeholder chips use --ph-bg / --ph-ink so unknowns stay obvious.
+   Tan chip colours are unused unless a marked note is added back.
    Fonts are SIL Open Font License; see assets/fonts/OFL-*.txt. */
 
 @font-face {
@@ -164,7 +164,6 @@ a:hover {
   max-width: 40rem;
 }
 
-/* Placeholder chips. Keep this treatment so unknowns stay visible. */
 .ph {
   font-family: var(--font-mono);
   font-size: 0.84em;
@@ -408,10 +407,10 @@ a:hover {
 }
 
 .feature {
-  display: grid;
-  grid-template-columns: minmax(16rem, 0.92fr) minmax(0, 1.15fr);
+  display: block;
   background: var(--paper-raised);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--clay);
 }
 
 .feature-media figure + figure {
@@ -516,6 +515,7 @@ a:hover {
   flex-direction: column;
   background: var(--paper-raised);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--clay);
 }
 
 .card-body {
@@ -549,12 +549,6 @@ a:hover {
   background: var(--paper-raised);
   border: 1px solid var(--line);
   padding: 0.4rem 0.75rem;
-}
-
-.tags li.is-confirm {
-  background: transparent;
-  border: none;
-  padding: 0;
 }
 
 .timeline {
@@ -856,7 +850,6 @@ code {
 
 @media (max-width: 800px) {
   .hero-grid,
-  .feature,
   .card-grid,
   .figure-grid {
     grid-template-columns: 1fr;

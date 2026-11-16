@@ -26,22 +26,25 @@ After this pull request is merged to `main`, turn on GitHub Pages if it is not a
 | `case-studies/vancouver-university-campus.html` | The campus energy model |
 | `case-studies/future-climate-resilience.html` | 2040, 2050 and 2060 HVAC runs for that same building |
 | `case-studies/teaching-building-lca.html` | Building LCA labs at SFU |
-| `case-studies/placeholder.html` | Empty case-study template. It is marked `noindex` |
 | `css/styles.css` | All styling. Colors and fonts are in `:root` at the top |
 | `js/nav.js` | The only copy of the menu. Do not paste the menu into HTML files |
 | `js/footer.js` | The only copy of the footer |
 | `js/main.js` | Mobile menu and the current-section highlight |
-| `assets/resume/Rozhin-Ahmadi-Resume.pdf` | The file the Download resume button opens |
+| `assets/resume/Rozhin-Ahmadi-Resume.pdf` | Kept on disk. The site does not link to it |
 | `assets/img/` | Photos and figures |
-| `sitemap.xml` | Pages search engines should see. The placeholder case study is left out on purpose |
+| `sitemap.xml` | Pages search engines should see |
 
 `nav.js` and `footer.js` are plain scripts with no `async` and no `defer`. Leave them that way. They write the menu and footer while the page loads.
 
 ## Edit text
 
-Most sentences are in `index.html`. Case-study pages repeat the campus numbers, the future-climate numbers, and the lab image so a shared link has the same facts. If you change a result, change it in both places.
+Most sentences are in `index.html`. The case-study pages repeat the same descriptions. Case studies describe what was modelled and compared. They do not state numeric findings.
 
-The CSME Congress 2026 talk is written out under Research and presentations. The title is “Study of Toxic Air Contaminants Exposure and Evacuation Zone for an Oil Tank Pool Fire in a Residential Neighborhood.” It is not a placeholder.
+Presentations holds one talk: “Study of Toxic Air Contaminants Exposure and Evacuation Zone for an Oil Tank Pool Fire in a Residential Neighborhood,” at the Canadian Society for Mechanical Engineering International Congress 2026. The nav item is Presentations.
+
+## Resume link
+
+The Download resume button is commented out in `index.html`, inside `.hero-actions`. The file `assets/resume/Rozhin-Ahmadi-Resume.pdf` is still in the repo and is not linked. To show the button again, uncomment that link.
 
 The hero and the About section use Rozhin’s bio. Standards named on the site are ones she has used: NECB 2020, ASHRAE 62.1 (ventilation), and the BC Energy Step Code, plus IES VE and the Athena Impact Estimator.
 
@@ -73,12 +76,10 @@ Font files are in `assets/fonts/`. Their licenses are the `OFL-*.txt` files besi
 
 ## Add a case study
 
-1. Copy `case-studies/placeholder.html` to a new file, for example `case-studies/your-project.html`.
-2. Delete the `<meta name="robots" content="noindex">` line so the page can be indexed.
-3. Replace the title, the description, the canonical URL, and every bracketed line.
-4. Save images in `assets/img/` and point the `<img src>` at them.
-5. Add a card in `index.html` inside the case-studies section (`id="work"`), next to the existing cards.
-6. Add the new URL to `sitemap.xml`.
+1. Copy `case-studies/teaching-building-lca.html` to a new file, for example `case-studies/your-project.html`.
+2. Replace the title, the description, and the canonical URL.
+3. Add a card in `index.html` inside the case-studies section (`id="work"`), next to the existing cards.
+4. Add the new URL to `sitemap.xml`.
 
 ## Profile photo
 
@@ -90,32 +91,6 @@ Do not add a phone number, references, or IELTS scores. Do not claim EIT, P.Eng.
 
 The Mitacs industry partner stays unnamed. The public line is “a Vancouver post-secondary institution.” Do not add the organization’s name.
 
-## Every placeholder
+## What was taken off the public page
 
-Unknowns are tan mono chips, or the word PLACEHOLDER on an image. Search the repo for `class="ph"` and `PLACEHOLDER`.
-
-| What is missing | Where | Drop-in file, or what to edit |
-| --- | --- | --- |
-| Resume | `index.html` hero, the Download resume link (about line 81). The button label includes `[file]` | Replace `assets/resume/Rozhin-Ahmadi-Resume.pdf` and keep that filename. The current PDF only says “Resume coming soon” |
-| Campus model image | `index.html` case studies (about line 106) and `case-studies/vancouver-university-campus.html` (about line 88) | Save the screenshot as `assets/img/campus-model.jpg` and change both `src` attributes |
-| Campus results image | `index.html` (about line 111) and `case-studies/vancouver-university-campus.html` (about line 92) | Save the figure as `assets/img/campus-results.jpg` and change both `src` attributes |
-| Heating load | `index.html` about line 126 and `case-studies/vancouver-university-campus.html` about line 74 | Replace `[Heating load: XX]` |
-| Cooling load | `index.html` about line 127 and the campus page about line 75 | Replace `[Cooling load: XX]` |
-| GHGI | `index.html` about line 128 and the campus page about line 76 | Replace `[GHGI: XX]` |
-| IES VE version | Campus page about line 55, and `case-studies/future-climate-resilience.html` about line 51 | Replace `[IES VE version: confirm]` |
-| Future-climate figure | `index.html` about line 151 and `case-studies/future-climate-resilience.html` about line 71 | Save it as `assets/img/future-climate.jpg` and change both `src` attributes |
-| 2040 performance | `index.html` about line 160 and the future-climate page about line 62 | Replace `[2040 performance: XX]` |
-| 2050 performance | `index.html` about line 161 and the future-climate page about line 63 | Replace `[2050 performance: XX]` |
-| 2060 performance | `index.html` about line 162 and the future-climate page about line 64 | Replace `[2060 performance: XX]` |
-| Operating cost change | `index.html` about line 163 and the future-climate page about line 65 | Replace `[Operating cost change: XX]` |
-| LCA lab image | `index.html` about line 138 and `case-studies/teaching-building-lca.html` about line 69 | Save it as `assets/img/lca-teaching.jpg` and change both `src` attributes |
-| Math-teaching employer | `index.html` experience, about line 225 | Replace `[School or organization: confirm]` |
-| AgriEngOrg end year | `index.html` experience, about line 228 | Replace `[End year: confirm]` |
-| Quality-control internship end year | `index.html` experience, about line 234 | Replace `[End year: confirm]` |
-| IROST / University of Tehran year | `index.html` experience, about line 241 | Replace `[Year: confirm — 2017 or 2018]` |
-| Thesis title | `index.html` education, about line 262 | Replace `[Thesis title: confirm]` |
-| BSc class size | `index.html` education, about line 270 | Replace `[of XX students: confirm]` next to class rank 9 |
-| SEE GRAD 2026 | `index.html` research, about lines 299–301 | Replace the title, date and place, and abstract chips |
-| Publications | `index.html` research, about lines 307–308 | Replace the title and the citation line. Add another article the same way for each paper |
-
-The template page `case-studies/placeholder.html` is entirely bracketed (project name, building type, role, software, goal, what was modelled, scenarios, and the four result chips). It is the file to copy, not a finished project.
+Case studies describe scope only: what was modelled and what was compared. They do not show charts or numeric findings. The thesis line, the publications block, and SEE GRAD 2026 are gone. The nav item is Presentations, not Research. IES VE is named without a version. Open dates that were not known are shown as a start year only, or omitted. The math-teaching role has no employer line. Class rank is “9” with no class size.

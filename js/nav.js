@@ -22,7 +22,7 @@
     ["#tools", "Tools"],
     ["#experience", "Experience"],
     ["#education", "Education"],
-    ["#research", "Research"],
+    ["#presentations", "Presentations"],
     ["#about", "About"],
     ["#contact", "Contact"]
   ];
