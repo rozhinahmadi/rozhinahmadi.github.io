@@ -30,7 +30,7 @@ After this pull request is merged to `main`, turn on GitHub Pages if it is not a
 | `js/nav.js` | The only copy of the menu. Do not paste the menu into HTML files |
 | `js/footer.js` | The only copy of the footer |
 | `js/main.js` | Mobile menu and the current-section highlight |
-| `assets/resume/Rozhin-Ahmadi-Resume.pdf` | Kept on disk. The site does not link to it |
+| `assets/resume/Rozhin-Ahmadi-Resume.pdf` | The file the Download resume button opens |
 | `assets/img/` | Photos and figures |
 | `sitemap.xml` | Pages search engines should see |
 
@@ -42,9 +42,9 @@ Most sentences are in `index.html`. The case-study pages repeat the same descrip
 
 Presentations holds one talk: “Study of Toxic Air Contaminants Exposure and Evacuation Zone for an Oil Tank Pool Fire in a Residential Neighborhood,” at the Canadian Society for Mechanical Engineering International Congress 2026. The nav item is Presentations.
 
-## Resume link
+## Resume
 
-The Download resume button is commented out in `index.html`, inside `.hero-actions`. The file `assets/resume/Rozhin-Ahmadi-Resume.pdf` is still in the repo and is not linked. To show the button again, uncomment that link.
+The Download resume button is in `index.html`, inside `.hero-actions`. It points at `assets/resume/Rozhin-Ahmadi-Resume.pdf` and downloads as `Rozhin-Ahmadi-Resume.pdf`. Replace that file to update the resume. Do not copy contact numbers from the PDF onto the page.
 
 The hero and the About section use Rozhin’s bio. Standards named on the site are ones she has used: NECB 2020, ASHRAE 62.1 (ventilation), and the BC Energy Step Code, plus IES VE and the Athena Impact Estimator.
 
@@ -87,7 +87,7 @@ The hero photo is `assets/img/profile.jpg` (600×800, a 3:4 crop). The tag is in
 
 ## Leave these off the site
 
-Do not add a phone number, references, or IELTS scores. Do not claim EIT, P.Eng., or LEED. If a credential line is added later, the only wording to use is: “Pursuing EIT registration with EGBC.”
+Do not add a contact number, references, or IELTS scores. Do not claim EIT, P.Eng., or LEED. If a credential line is added later, the only wording to use is: “Pursuing EIT registration with EGBC.”
 
 The Mitacs industry partner stays unnamed. The public line is “a Vancouver post-secondary institution.” Do not add the organization’s name.
 
